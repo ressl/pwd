@@ -1,0 +1,6 @@
+builds:
+  - binary: pwd
+    goos:
+      - darwin
+    goarch:
+      - amd64
