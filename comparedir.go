@@ -6,7 +6,8 @@ import (
 	"syscall"
 )
 
-func comparedir(path string) int {
+//comparedir return information about the path
+func comparedir(path string) (int, string) {
 	var cfile1 syscall.Stat_t
 	var cfile2 syscall.Stat_t
 	if path == "../" {
@@ -22,9 +23,8 @@ func comparedir(path string) int {
 		tdir = fmt.Sprintf("%v%v", path, dirs.Name())
 		syscall.Stat(tdir, &cfile2)
 		if cfile1.Ino == cfile2.Ino {
-			return int(cfile2.Ino)
-			break
+			return int(cfile2.Ino), dirs.Name()
 		}
 	}
-	panic("error")
+	return 2, "/"
 }
