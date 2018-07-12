@@ -11,15 +11,21 @@ func check(e error) {
 }
 
 func main() {
-	//comparedir("..")
-	//test := "../../"
-	//test := "../../../"
-	test := "../../../"
-	//for i := 2; i <= comparedir(test); test += "/.." {
-	//	fmt.Println(i)
-	//	fmt.Println(test)
-	//test += "../"
-	//comparedir(test)
-	//	}
-	fmt.Println(comparedir(test))
+	test := "../"
+	valid := true
+	inode := 0
+	dirs := ""
+	pwd := ""
+
+	for valid {
+		inode, dirs = comparedir(test)
+		if inode == 2 {
+			pwd = fmt.Sprintf("/%v", pwd)
+			valid = false
+		} else {
+			pwd = fmt.Sprintf("%v/%v", dirs, pwd)
+			test += "../"
+		}
+	}
+	fmt.Println(pwd)
 }
