@@ -1,64 +1,37 @@
-# Project Title
+# go pwd implementation
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/20d4dbf19a82485bbde7f392b9b40a22)](https://www.codacy.com/app/r.ressl/pwd?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=safematix/pwd&amp;utm_campaign=Badge_Grade)
 
-One Paragraph of project description goes here
+The implementation of pwd in go, print name of current/working directory.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Download the newest release:
+
+[pwd](https://github.com/safematix/pwd/releases)
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
 ```
-Give the example
+tar xfvz pwd_1.0.0_darwin_amd64.tar.gz
 ```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+```
+pwd
+```
 
 ### Break down into end to end tests
 
-Explain what these tests test and why
-
-```
-Give an example
-```
-
 ### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
-
 ## Built With
 
-* [chef](https://www.chef.io) - Chef Software, Inc
+* [go](https://golang.org/) - Go
 
 ## Contributing
 
@@ -66,13 +39,13 @@ Please read [CONTRIBUTING](CONTRIBUTING.md) for details on our code of conduct, 
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/safematix/pwd/tags). 
 
 ## Authors
 
 * **Robert Ressl** - *Initial work* - [Robert Ressl](https://github.com/safematix)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/safematix/pwd/contributors) who participated in this project.
 
 ## License
 
@@ -80,11 +53,5 @@ This project is licensed under the GNU Affero General Public License v3.0 Licens
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
-
 ## Thanks to…
 
-* People who helped you.
-* Persons you have taken code from
