@@ -1,7 +1,7 @@
-# Project Cookbook
+# go pwd implementation
 
-This file is used to list changes made in each version of the Project cookbook.
+This file is used to list changes made in each version of the go pwd implementation.
 
-## v0.0.0 (date)
+## v1.0.0 (12.07.2018)
 
-- <###> example
+- first release 
