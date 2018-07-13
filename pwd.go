@@ -20,7 +20,7 @@ func main() {
 	for valid {
 		inode, dirs = comparedir(test)
 		if inode == 2 {
-			pwd = fmt.Sprintf("/%v", pwd)
+			pwd = fmt.Sprintf("%v%v", dirs, pwd)
 			valid = false
 		} else {
 			pwd = fmt.Sprintf("%v/%v", dirs, pwd)
