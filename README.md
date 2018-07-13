@@ -14,13 +14,14 @@ Download the newest release:
 ### Installing
 
 ```
+curl -O -J -L https://github.com/safematix/pwd/releases/download/v1.0.0/pwd_1.0.0_darwin_amd64.tar.gz
 tar xfvz pwd_1.0.0_darwin_amd64.tar.gz
 ```
 
 ## Running the tests
 
 ```
-pwd
+./pwd
 ```
 
 ### Break down into end to end tests
@@ -31,7 +32,7 @@ pwd
 
 ## Built With
 
-* [go](https://golang.org/) - Go
+* [go](https://golang.org/) - The Go Programming Language
 
 ## Contributing
 
