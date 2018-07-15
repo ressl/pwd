@@ -27,5 +27,6 @@ func main() {
 			test += "../"
 		}
 	}
-	fmt.Println(pwd)
+	fpwd := len(pwd) - 1
+	fmt.Println(pwd[:fpwd])
 }
