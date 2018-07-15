@@ -7,7 +7,7 @@ func TestComparedir(t *testing.T) {
 	if _, observed := comparedir("../"); observed != expected {
 		t.Fatalf("comparedir() = %v, want %v", observed, expected)
 	}
-	t.Logf("PASS: pwd")
+	t.Logf("PASS: comparedir")
 }
 
 func BenchmarkComparedir(b *testing.B) {
