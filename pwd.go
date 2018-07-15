@@ -11,6 +11,10 @@ func check(e error) {
 }
 
 func main() {
+	fmt.Println(pwd())
+}
+
+func pwd() string {
 	test := "../"
 	valid := true
 	inode := 0
@@ -28,5 +32,5 @@ func main() {
 		}
 	}
 	fpwd := len(pwd) - 1
-	fmt.Println(pwd[:fpwd])
+	return pwd[:fpwd]
 }
